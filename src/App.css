@@ -1,0 +1,38 @@
+#container {
+  width: min(100vh, 100vw);
+  display: flex;
+}
+
+#board {
+  display: flex;
+  position: relative;
+  flex-flow: column;
+  width: min(100vh, calc(100% - 256px));
+}
+
+.row {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+  width: 12.5%;
+  aspect-ratio: 1/1;
+  border: solid black 0.5px;
+}
+
+.settable-cell {
+  background-color: rgba(255, 255, 0.5);
+}
+
+#information {
+  width: 256px;
+  margin: 0 1em;
+  font-size: 24px;
+  box-sizing: border-box;
+}
